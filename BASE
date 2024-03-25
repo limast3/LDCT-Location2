@@ -1,0 +1,16 @@
+import pandas as pd
+
+# Dados fictícios para a tabela
+dados = {
+    'Placa do Veículo': ['ABC1234', 'XYZ5678', 'DEF9012'],
+    'Latitude': [-23.5505, -22.9068, -23.5505],
+    'Longitude': [-46.6333, -43.1729, -46.6333],
+    'Data e Hora da Última Atualização': ['2024-03-25 08:00:00', '2024-03-25 08:15:00', '2024-03-25 08:30:00'],
+    'Google Maps': ['link1', 'link2', 'link3']  # Links fictícios para o Google Maps
+}
+
+# Criando o DataFrame
+df = pd.DataFrame(dados)
+
+# Exibindo o DataFrame
+print(df)
