@@ -1,16 +1,57 @@
-import pandas as pd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela de Veículos</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
 
-# Dados fictícios para a tabela
-dados = {
-    'Placa do Veículo': ['ABC1234', 'XYZ5678', 'DEF9012'],
-    'Latitude': [-23.5505, -22.9068, -23.5505],
-    'Longitude': [-46.6333, -43.1729, -46.6333],
-    'Data e Hora da Última Atualização': ['2024-03-25 08:00:00', '2024-03-25 08:15:00', '2024-03-25 08:30:00'],
-    'Google Maps': ['link1', 'link2', 'link3']  # Links fictícios para o Google Maps
-}
+<h2>Tabela de Veículos</h2>
+<table>
+  <tr>
+    <th>Placa do Veículo</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Data e Hora da Última Atualização</th>
+    <th>Google Maps</th>
+  </tr>
+  <tr>
+    <td>ABC1234</td>
+    <td>-23.5505</td>
+    <td>-46.6333</td>
+    <td>2024-03-25 08:00:00</td>
+    <td><a href="link1">Abrir no Google Maps</a></td>
+  </tr>
+  <tr>
+    <td>XYZ5678</td>
+    <td>-22.9068</td>
+    <td>-43.1729</td>
+    <td>2024-03-25 08:15:00</td>
+    <td><a href="link2">Abrir no Google Maps</a></td>
+  </tr>
+  <tr>
+    <td>DEF9012</td>
+    <td>-23.5505</td>
+    <td>-46.6333</td>
+    <td>2024-03-25 08:30:00</td>
+    <td><a href="link3">Abrir no Google Maps</a></td>
+  </tr>
+</table>
 
-# Criando o DataFrame
-df = pd.DataFrame(dados)
-
-# Exibindo o DataFrame
-print(df)
+</body>
+</html>
